@@ -11,11 +11,20 @@ public class Email {
     }
 
     public String getEmailId() {
-        return emailId;
+        return this.emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getPassword() {
-        return password;
+
+        return this.password;
     }
 
     public void changePassword(String oldPassword, String newPassword){
@@ -32,6 +41,7 @@ public class Email {
 //                System.out.print("New password added");
             }
         }
+
     }
 
     public boolean check (String newPass){
